@@ -38,23 +38,11 @@ const customerAndAge = (obj) => {
 
   return customersData;
 };
-
-// this is another methode just to know :
-// const p = {
-//   "p1": "value1",
-//   "p2": "value2",
-//   "p3": "value3"
-// };
-
-// for (const [key, value] of Object.entries(p)) {
-// console.log(`${key}: ${value}`);
-// }
-
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 02
-// optional:
+// Required:
 //
 // Write a function that takes recipe info object and returns an array of recipe info as strings
 // as in the example
@@ -74,7 +62,13 @@ const customerAndAge = (obj) => {
 // You can solve this challenge by using Object.entries
 
 const getEntries = (obj) => {
-  // write your code here
+  let recipeInfo = [];
+  let keys = Object.keys(obj);
+  let values = Object.values(obj);
+  for (let i = 0; i < keys.length; i++) {
+    recipeInfo.push(`${keys[i]}: ${values[i]}`);
+  }
+  return recipeInfo;
 };
 // -------------------------------------------------------------------------------------------------------
 
