@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n  let duplicatedNums = {};\n  let count = 1;\n  for (let num of arr) {\n    if (duplicatedNums[num]) {\n      duplicatedNums[num]++;\n    } else {\n      duplicatedNums[num] = 1;\n    }\n  }\n  for (let num in duplicatedNums) {\n    if (duplicatedNums[num] > count) {\n      count = duplicatedNums[num];\n    }\n  }\n  return arr.length - count;\n}\n\n"
             ],
             "outputs": []
         },
