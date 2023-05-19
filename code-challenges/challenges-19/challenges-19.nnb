@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "function appendAndDelete(s, t, k) {\n  //first we count common characters\nfunction commonLen() {\n  let len = 0;\n  while (len < s.length && len < t.length && s[len] === t[len]) len++;\n  return len;\n};\n//we count steps without the common characters\nconst requiredSteps = s.length + t.length - 2 * commonLen();\n// now we do the  logic\nif (\n  (requiredSteps <= k && requiredSteps % 2 === k % 2) ||\n  k >= s.length + t.length\n) {\n  return \"Yes\";\n} else {\n  return \"No\";\n}\n}\n"
+                "\n  //first we count common characters\nfunction commonLen() {\n  let len = 0;\n  while (len < s.length && len < t.length && s[len] === t[len]) len++;\n  return len;\n};\n//we count steps without the common characters\nconst requiredSteps = s.length + t.length - 2 * commonLen();\n// now we do the  logic\nif (\n  (requiredSteps <= k && requiredSteps % 2 === k % 2) ||\n  k >= s.length + t.length\n) {\n  return \"Yes\";\n} else {\n  return \"No\";\n}\n\n"
             ],
             "outputs": []
         },
